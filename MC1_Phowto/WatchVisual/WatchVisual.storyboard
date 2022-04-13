@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Visual View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="watchVisualSB" id="Y6W-OH-hqX" customClass="WatchVisualViewController" customModule="MC1_Phowto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyk-p7-Lpy">
+                                <rect key="frame" x="166" y="489" width="67" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="374" translatesAutoresizingMaskIntoConstraints="NO" id="tET-77-C47">
+                                <rect key="frame" x="20" y="525" width="374" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet, ex mollis convallis malesuada, arcu lectus auctor dui, eu hendrerit nunc mi nec augue. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3sU-M2-BWx">
+                                <rect key="frame" x="79" y="219" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTU-vs-3bl">
+                                <rect key="frame" x="343" y="44" width="51" height="494"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2R-Ct-4ot">
+                                <rect key="frame" x="0.0" y="67" width="101" height="369"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 15" translatesAutoresizingMaskIntoConstraints="NO" id="xrb-dW-sSO">
+                                <rect key="frame" x="95" y="784" width="780" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ZMU-V9-MI2"/>
+                                    <constraint firstAttribute="width" constant="164" id="sDX-uj-0f5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xrb-dW-sSO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="100-rt-xbG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xrb-dW-sSO" secondAttribute="trailing" constant="95" id="XkU-61-YHb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xrb-dW-sSO" secondAttribute="bottom" constant="35" id="v4n-fU-bH9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DsS-NL-06Y"/>
+                    <connections>
+                        <outlet property="btnTry" destination="xrb-dW-sSO" id="bOJ-C7-UH8"/>
+                        <outlet property="contentText" destination="tET-77-C47" id="8xq-ZZ-BFo"/>
+                        <outlet property="nextViewBtn" destination="bTU-vs-3bl" id="sUA-3O-ANa"/>
+                        <outlet property="openPage" destination="vyk-p7-Lpy" id="0OT-hp-KJE"/>
+                        <outlet property="prevViewBtn" destination="c2R-Ct-4ot" id="lDs-Kr-FZF"/>
+                        <outlet property="tesImgView" destination="3sU-M2-BWx" id="Jw6-PR-Zb5"/>
+                        <segue destination="pFZ-5U-nfi" kind="show" identifier="ComparePageSegue" id="cm8-OI-NbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="66.964285714285708"/>
+        </scene>
+        <!--ComparePageSB-->
+        <scene sceneID="H5p-mA-XKO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ComparePageSB" storyboardName="ComparePage" referencedIdentifier="ComparePageSB" id="pFZ-5U-nfi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LtB-ZC-ifH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWi-Cl-hOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="87"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UvQ-zC-eUV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IPT-pd-mfc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DZE-Ur-uJc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="NNE-cy-Ffo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaL-Hh-JoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Asset 15" width="780" height="204.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,15 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1023102805930D001A1481 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10230F2805930D001A1481 /* HomePageViewController.swift */; };
+		BA10231328059359001A1481 /* SelectedModule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA10231228059359001A1481 /* SelectedModule.storyboard */; };
+		BA1023152805938E001A1481 /* SelectedModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1023142805938E001A1481 /* SelectedModuleViewController.swift */; };
+		BA945730280593F700B88544 /* SubModuleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94572F280593F700B88544 /* SubModuleViewCell.swift */; };
+		BA94573328059AF400B88544 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94573228059AF400B88544 /* CollectionViewCell.swift */; };
+		BA9457352805A74300B88544 /* WatchVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9457342805A74300B88544 /* WatchVisualViewController.swift */; };
+		BA9457372805A76A00B88544 /* WatchVisual.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9457362805A76A00B88544 /* WatchVisual.storyboard */; };
+		BA94573B2805B58800B88544 /* ComparePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94573A2805B58800B88544 /* ComparePage.storyboard */; };
+		BA94573D2805B5FB00B88544 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94573C2805B5FB00B88544 /* CompareViewController.swift */; };
+		BA94573F2805BADD00B88544 /* ReflectionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94573E2805BADD00B88544 /* ReflectionPage.storyboard */; };
+		BA9457412805BB1700B88544 /* ReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9457402805BB1700B88544 /* ReflectionViewController.swift */; };
+		BA9457442805BDA400B88544 /* DescriptionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9457432805BDA400B88544 /* DescriptionPageViewController.swift */; };
+		BA9457462805BDE100B88544 /* DescriptionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9457452805BDE100B88544 /* DescriptionPage.storyboard */; };
+		BA9457482805C5E800B88544 /* SelectedModuleDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9457472805C5E800B88544 /* SelectedModuleDatabase.swift */; };
 		BAA8FA80280590CF004846A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FA7F280590CF004846A5 /* AppDelegate.swift */; };
 		BAA8FA82280590CF004846A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FA81280590CF004846A5 /* SceneDelegate.swift */; };
 		BAA8FA84280590CF004846A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FA83280590CF004846A5 /* ViewController.swift */; };
 		BAA8FA87280590CF004846A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FA85280590CF004846A5 /* Main.storyboard */; };
 		BAA8FA89280590D0004846A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FA88280590D0004846A5 /* Assets.xcassets */; };
 		BAA8FA8C280590D0004846A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FA8A280590D0004846A5 /* LaunchScreen.storyboard */; };
+		BAA8FAAB2805929E004846A5 /* CarouselModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8FAAA2805929E004846A5 /* CarouselModel.swift */; };
+		BAA8FAAD280592C8004846A5 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA8FAAC280592C8004846A5 /* HomePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA10230F2805930D001A1481 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		BA10231228059359001A1481 /* SelectedModule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectedModule.storyboard; sourceTree = "<group>"; };
+		BA1023142805938E001A1481 /* SelectedModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedModuleViewController.swift; sourceTree = "<group>"; };
+		BA94572F280593F700B88544 /* SubModuleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModuleViewCell.swift; sourceTree = "<group>"; };
+		BA94573228059AF400B88544 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BA9457342805A74300B88544 /* WatchVisualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVisualViewController.swift; sourceTree = "<group>"; };
+		BA9457362805A76A00B88544 /* WatchVisual.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchVisual.storyboard; sourceTree = "<group>"; };
+		BA94573A2805B58800B88544 /* ComparePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComparePage.storyboard; sourceTree = "<group>"; };
+		BA94573C2805B5FB00B88544 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		BA94573E2805BADD00B88544 /* ReflectionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReflectionPage.storyboard; sourceTree = "<group>"; };
+		BA9457402805BB1700B88544 /* ReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionViewController.swift; sourceTree = "<group>"; };
+		BA9457432805BDA400B88544 /* DescriptionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPageViewController.swift; sourceTree = "<group>"; };
+		BA9457452805BDE100B88544 /* DescriptionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DescriptionPage.storyboard; sourceTree = "<group>"; };
+		BA9457472805C5E800B88544 /* SelectedModuleDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedModuleDatabase.swift; sourceTree = "<group>"; };
 		BAA8FA7C280590CF004846A5 /* MC1_Phowto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MC1_Phowto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA8FA7F280590CF004846A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA8FA81280590CF004846A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +54,8 @@
 		BAA8FA88280590D0004846A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA8FA8B280590D0004846A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA8FA8D280590D0004846A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA8FAAA2805929E004846A5 /* CarouselModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselModel.swift; sourceTree = "<group>"; };
+		BAA8FAAC280592C8004846A5 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +69,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA10231128059336001A1481 /* SelectedModule */ = {
+			isa = PBXGroup;
+			children = (
+				BA10231228059359001A1481 /* SelectedModule.storyboard */,
+				BA1023142805938E001A1481 /* SelectedModuleViewController.swift */,
+				BA94572F280593F700B88544 /* SubModuleViewCell.swift */,
+				BA9457472805C5E800B88544 /* SelectedModuleDatabase.swift */,
+			);
+			path = SelectedModule;
+			sourceTree = "<group>";
+		};
+		BA9457312805941600B88544 /* WatchVisual */ = {
+			isa = PBXGroup;
+			children = (
+				BA9457342805A74300B88544 /* WatchVisualViewController.swift */,
+				BA9457362805A76A00B88544 /* WatchVisual.storyboard */,
+			);
+			path = WatchVisual;
+			sourceTree = "<group>";
+		};
+		BA9457382805AEE400B88544 /* ComparePage */ = {
+			isa = PBXGroup;
+			children = (
+				BA94573A2805B58800B88544 /* ComparePage.storyboard */,
+				BA94573C2805B5FB00B88544 /* CompareViewController.swift */,
+			);
+			path = ComparePage;
+			sourceTree = "<group>";
+		};
+		BA9457392805AF7900B88544 /* ReflectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				BA94573E2805BADD00B88544 /* ReflectionPage.storyboard */,
+				BA9457402805BB1700B88544 /* ReflectionViewController.swift */,
+			);
+			path = ReflectionPage;
+			sourceTree = "<group>";
+		};
+		BA9457422805BD0D00B88544 /* DescriptionPage */ = {
+			isa = PBXGroup;
+			children = (
+				BA9457432805BDA400B88544 /* DescriptionPageViewController.swift */,
+				BA9457452805BDE100B88544 /* DescriptionPage.storyboard */,
+			);
+			path = DescriptionPage;
+			sourceTree = "<group>";
+		};
 		BAA8FA73280590CF004846A5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +135,12 @@
 		BAA8FA7E280590CF004846A5 /* MC1_Phowto */ = {
 			isa = PBXGroup;
 			children = (
+				BA9457422805BD0D00B88544 /* DescriptionPage */,
+				BA9457392805AF7900B88544 /* ReflectionPage */,
+				BA9457382805AEE400B88544 /* ComparePage */,
+				BA9457312805941600B88544 /* WatchVisual */,
+				BA10231128059336001A1481 /* SelectedModule */,
+				BAA8FAA928059266004846A5 /* HomePage */,
 				BAA8FA7F280590CF004846A5 /* AppDelegate.swift */,
 				BAA8FA81280590CF004846A5 /* SceneDelegate.swift */,
 				BAA8FA83280590CF004846A5 /* ViewController.swift */,
@@ -65,6 +150,17 @@
 				BAA8FA8D280590D0004846A5 /* Info.plist */,
 			);
 			path = MC1_Phowto;
+			sourceTree = "<group>";
+		};
+		BAA8FAA928059266004846A5 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8FAAA2805929E004846A5 /* CarouselModel.swift */,
+				BAA8FAAC280592C8004846A5 /* HomePage.storyboard */,
+				BA10230F2805930D001A1481 /* HomePageViewController.swift */,
+				BA94573228059AF400B88544 /* CollectionViewCell.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +221,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA94573F2805BADD00B88544 /* ReflectionPage.storyboard in Resources */,
+				BAA8FAAD280592C8004846A5 /* HomePage.storyboard in Resources */,
+				BA9457462805BDE100B88544 /* DescriptionPage.storyboard in Resources */,
 				BAA8FA8C280590D0004846A5 /* LaunchScreen.storyboard in Resources */,
+				BA94573B2805B58800B88544 /* ComparePage.storyboard in Resources */,
+				BA9457372805A76A00B88544 /* WatchVisual.storyboard in Resources */,
 				BAA8FA89280590D0004846A5 /* Assets.xcassets in Resources */,
+				BA10231328059359001A1481 /* SelectedModule.storyboard in Resources */,
 				BAA8FA87280590CF004846A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA945730280593F700B88544 /* SubModuleViewCell.swift in Sources */,
 				BAA8FA84280590CF004846A5 /* ViewController.swift in Sources */,
+				BA94573D2805B5FB00B88544 /* CompareViewController.swift in Sources */,
+				BA94573328059AF400B88544 /* CollectionViewCell.swift in Sources */,
+				BA9457352805A74300B88544 /* WatchVisualViewController.swift in Sources */,
+				BAA8FAAB2805929E004846A5 /* CarouselModel.swift in Sources */,
+				BA9457442805BDA400B88544 /* DescriptionPageViewController.swift in Sources */,
 				BAA8FA80280590CF004846A5 /* AppDelegate.swift in Sources */,
+				BA9457412805BB1700B88544 /* ReflectionViewController.swift in Sources */,
+				BA1023152805938E001A1481 /* SelectedModuleViewController.swift in Sources */,
+				BA9457482805C5E800B88544 /* SelectedModuleDatabase.swift in Sources */,
+				BA1023102805930D001A1481 /* HomePageViewController.swift in Sources */,
 				BAA8FA82280590CF004846A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
