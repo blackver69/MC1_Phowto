@@ -20,11 +20,11 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             SubModuleContent(subModuleName :"What is Composition?",
                              imageContent: [
                                 ["Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14", "Slide 15", "Slide 16", "Slide 17"],
-                                ["Slide 20", "Slide 21", "Slide 22", "Slide 23", "Slide 24", "Slide 25", "Slide 26", "Slide 27"],
-                                ["Slide 30", "Slide 31", "Slide 32", "Slide 33", "Slide 34", "Slide 35", "Slide 36"],
+                                ["slide 20", "slide 21", "slide 22", "slide 23", "slide 24", "slide 25", "slide 26", "slide 27"],
+                                ["Slide30", "Slide31", "Slide32", "Slide33", "Slide34", "Slide35", "Slide36"],
                                 ["slide4_00", "slide4_01", "slide4_02", "slide4_03", "slide4_04", "slide4_05", "slide4_06", "slide4_07", "slide4_08"
                                  , "slide4_09", "slide4_10", "slide4_11", "slide4_12", "slide4_13", "slide4_14", "slide4_15", "slide4_16", "slide4_17"],
-                                ["Slide 5_1", "Slide 5_2", "Slide 5_3", "Slide 5_4", "Slide 5_5", "Slide 5_6", "Slide 5_7"]
+                                ["slide 5_1", "slide 5_2", "slide 5_3", "slide 5_4", "slide 5_5", "slide 5_6", "slide 5_7"]
                                 
                              ],
                              content: [
@@ -40,7 +40,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
                              imageContent: [
                                 ["2_1", "2_1-1", "2_1-2", "2_1-3", "2_1-4", "2_1-5"],
                                 ["2_11", "2_2", "2_3", "2_4", "2_5", "2_6"],
-                                [""],
+                                ["2_6"],
                                 ["4_1", "4_2", "4_3", "4_4", "4_5", "4_6", "4_7", "4_8", "4_9", "4_10", "4_11", "4_12"]
                              ],
                              

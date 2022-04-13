@@ -17,7 +17,7 @@ class CompareViewController: UIViewController {
     @IBOutlet weak var SelectedModuleBack: UINavigationItem!
     var image1: UIImage = UIImage(named: "Module 03.jpg")!
     var image2: UIImage = UIImage(named: "Module 08.jpg")!
-    
+    var subModuleCount: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,7 @@ class CompareViewController: UIViewController {
         }
         destination.modalPresentationStyle = .fullScreen
         destination.imageData = image2
+        destination.subModuleCount = subModuleCount
     }
     
 

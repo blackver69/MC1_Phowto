@@ -17,7 +17,7 @@ class DescriptionPageViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var ImageTaken: UIImageView!
     @IBOutlet weak var BackgroundView: UIView!
     @IBOutlet weak var TitleTellUs: UILabel!
-    
+    var subModuleCount: Int = 0
     
     var imageData : UIImage?
     override func viewDidLoad() {
@@ -91,7 +91,7 @@ class DescriptionPageViewController: UIViewController, UITextViewDelegate {
     
     
     @IBAction func finishSubModule(_ sender: Any) {
-        
+        subModuleCount += 1
         
     }
     

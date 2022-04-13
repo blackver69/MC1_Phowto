@@ -25,7 +25,7 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
     var nextModule = 0
     let nextSt = "next"
     let prevSt = "prev"
-    
+    var subModuleCount: Int = 0
     
     //****
     var imageData : UIImage?
@@ -41,6 +41,8 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
         implementImage()
         nextModule = 1
         
+        
+        btnTry.isHidden = true
         
         
 //        if !isVisible(view: view1) {
@@ -104,7 +106,8 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
             currModule -= 1
             
             contentText.text = subModuleDatabase.content![currModule]
-            implementImage()
+            animateImage(currModule, prevSt)
+            
         } else {
             print("************ HIT THE FIRST INDEX")
         }
@@ -114,8 +117,9 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
         if currModule < (subModuleDatabase.content!.count - 1) {
             currModule += 1
             contentText.text = subModuleDatabase.content![currModule]
-            implementImage()
+            animateImage(currModule, nextSt)
         } else {
+            btnTry.isHidden = false
             print("************ HIT THE LAST INDEX")
         }
     }
@@ -126,14 +130,14 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
                               duration: 0.8,
                               options: .transitionFlipFromRight,
                               animations: {
-                self.tesImgView.image = UIImage.init(named: self.makeGifArr[currModule])
+                self.implementImage()
             }, completion: nil)
         } else {
             UIView.transition(with: self.tesImgView,
                               duration: 0.8,
                               options: .transitionFlipFromLeft,
                               animations: {
-                self.tesImgView.image = UIImage.init(named: self.assetArray[currModule])
+                self.implementImage()
             }, completion: nil)
         }
     }
@@ -239,13 +243,14 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
         }
         destination.modalPresentationStyle = .fullScreen
         destination.image2 = imageData!
+        destination.subModuleCount = subModuleCount
     }
     
     
     func replaceUIImage()-> [UIImage]{
         var arrUIImage : [UIImage] = []
         
-        for i in 0...(subModuleDatabase.imageContent!.count-1){
+        for i in 0...(subModuleDatabase.imageContent![currModule].count-1){
             
             arrUIImage.append(UIImage(named: subModuleDatabase.imageContent![currModule][i])!)
         

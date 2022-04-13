@@ -16,7 +16,7 @@ class ReflectionViewController: UIViewController {
     @IBOutlet weak var feelingField: UITextField!
     @IBOutlet weak var thoughtField: UITextField!
     @IBOutlet weak var positionField: UITextField!
-    
+    var subModuleCount: Int = 0
     //how was your feeling after learning ?
     let feelings = ["Exciting 🤩", "Happy 😄", "Good 😐", "Sad ☹️", "Confused 😩"]
     
@@ -160,5 +160,6 @@ extension ReflectionViewController: UIPickerViewDelegate, UIPickerViewDataSource
         }
         destination.modalPresentationStyle = .fullScreen
         destination.imageData = imageData
+        destination.subModuleCount = subModuleCount
     }
 }

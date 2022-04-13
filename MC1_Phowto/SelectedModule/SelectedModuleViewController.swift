@@ -58,8 +58,8 @@ class SelectedModuleViewController: UIViewController, UITableViewDelegate, UITab
         
 
         cell.layer.masksToBounds = true
-        if(subModuleCount > indexPath.row){
-            cell.subModuleProgress.image = UIImage(systemName: "checkmark")
+        if(subModuleCount <= indexPath.row){
+            
         }else{
             cell.subModuleProgress.image = UIImage(systemName: "checkmark.square")
         
@@ -88,12 +88,17 @@ class SelectedModuleViewController: UIViewController, UITableViewDelegate, UITab
             let senderData = sender as? SubModuleContent
             let vc = segue.destination as? WatchVisualViewController
             vc?.subModuleDatabase = senderData
+            vc?.subModuleCount = subModuleCount
 
         }
     }
     @IBAction func unwindSelectedModule(_ unwindSegue: UIStoryboardSegue) {
         
-        let sourceViewController = unwindSegue.source
+        guard let sourceViewController = unwindSegue.source as? DescriptionPageViewController else{
+            return
+        }
+        subModuleCount = sourceViewController.subModuleCount
+        
         // Use data from the view controller which initiated the unwind segue
     }
 }
