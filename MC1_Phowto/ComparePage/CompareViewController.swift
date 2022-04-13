@@ -26,7 +26,7 @@ class CompareViewController: UIViewController {
         imageReference.image = image1
         imageTaken.image = image2
         
-        SelectedModuleBack.backBarButtonItem = UIBarButtonItem(title: "Module", style: .plain, target: self, action: #selector(metodeBack))
+        
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipe))
         swipeRight.direction = .left
         self.view.addGestureRecognizer(swipeRight)

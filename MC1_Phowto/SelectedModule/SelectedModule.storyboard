@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-bK-s2r">
-                                <rect key="frame" x="18" y="98" width="378" height="762"/>
+                                <rect key="frame" x="18" y="54" width="378" height="806"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M9r-hb-CUg">
-                                        <rect key="frame" x="0.0" y="0.0" width="378" height="762"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="806"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Gk-yAS">
                                                 <rect key="frame" x="0.0" y="0.0" width="378" height="232"/>
@@ -82,7 +82,7 @@
                                                 </constraints>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="31" estimatedSectionHeaderHeight="1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-RC-VbJ">
-                                                <rect key="frame" x="0.0" y="320" width="378" height="362"/>
+                                                <rect key="frame" x="0.0" y="320" width="378" height="406"/>
                                                 <color key="sectionIndexColor" red="0.83529412749999998" green="0.84313726430000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="sectionIndexBackgroundColor" red="0.83529412749999998" green="0.84313726430000002" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <prototypes>
@@ -146,7 +146,7 @@
                                                 <sections/>
                                             </tableView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZU-PM-dar">
-                                                <rect key="frame" x="0.0" y="682" width="378" height="80"/>
+                                                <rect key="frame" x="0.0" y="726" width="378" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmS-Fr-o14">
                                                         <rect key="frame" x="80" y="18.5" width="218" height="43"/>
@@ -222,24 +222,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbT-LM-wi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2522" y="43"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MQY-oi-VuL">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vJ4-NE-NrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ted-wP-itf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ThB-aN-I8O">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="sIa-3Z-0E7"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="968.11594202898561" y="43.526785714285715"/>
         </scene>
     </scenes>
     <resources>

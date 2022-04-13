@@ -89,20 +89,12 @@ class DescriptionPageViewController: UIViewController, UITextViewDelegate {
     
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? SelectedModuleViewController
-            else {
-                return
-        }
-        destination.modalPresentationStyle = .fullScreen
-        destination.subModuleCount += 1
+    
+    @IBAction func finishSubModule(_ sender: Any) {
+        
+        
     }
     
-    @IBAction func saveButton(_ sender: Any) {
-        
-        self.performSegue(withIdentifier: "SelectedDescSegue", sender: nil)
 
-    }
-        
     
 }

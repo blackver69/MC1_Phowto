@@ -14,17 +14,20 @@ class SelectedModuleViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var moduleDesciption: UILabel!
     
     @IBOutlet weak var subModuleImage: UIImageView!
-    var subModuleCount: Int = 0
     var database: Content?
     var subModuleDatabase : SubModuleContent?
-    
+    var subModuleCount: Int = 0
     let cellSpacingHeight: CGFloat = 5
+    
+    
     @IBOutlet weak var subModuleTable: UITableView!
     override func viewDidLoad() {
         
         super.viewDidLoad()
         subModuleTable.delegate = self
         subModuleTable.dataSource = self
+        
+        
         moduleName.text = database?.name
         moduleDesciption.text = database?.description
         subModuleImage.image = UIImage(named: database!.image!)
@@ -88,5 +91,9 @@ class SelectedModuleViewController: UIViewController, UITableViewDelegate, UITab
 
         }
     }
-    
+    @IBAction func unwindSelectedModule(_ unwindSegue: UIStoryboardSegue) {
+        
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
 }

@@ -12,11 +12,14 @@ import Foundation
 struct SubModuleContent{
     
     var subModuleName: String?
+    
+    var imageContent: [[String]]?
     var content: [String]?
     
 
 }
 struct Content{
+    
     var image: String?
     var name: String?
     var id: String?
@@ -24,6 +27,13 @@ struct Content{
     var image_crop : String?
     var SubModule: [SubModuleContent]
     
+    func userDefault(content: Content){
+        UserDefaults.standard.set(content, forKey: "content")
+    }
+    
+    
 }
+
+
 
 

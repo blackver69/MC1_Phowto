@@ -26,8 +26,7 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
     let nextSt = "next"
     let prevSt = "prev"
     
-    let assetArray = ["Asset 14", "Asset 15", "Asset 16"]
-    let makeGifArr = ["Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14", "Slide 15", "Slide 16", "Slide 17"]
+    
     //****
     var imageData : UIImage?
     
@@ -36,22 +35,13 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
         setUpViewBtn()
         setupGesture()
         
-//        contentText.text = subModuleDatabase.content[]
+        contentText.text = subModuleDatabase.content![currModule]
 //        tesImgView.image = UIImage.init(named: assetArray[0])
-        let arrOfImg : [UIImage] = [UIImage.init(named: makeGifArr[0])!,
-                                    UIImage.init(named: makeGifArr[1])!,
-                                    UIImage.init(named: makeGifArr[2])!,
-                                    UIImage.init(named: makeGifArr[3])!,
-                                    UIImage.init(named: makeGifArr[4])!,
-                                    UIImage.init(named: makeGifArr[5])!,
-                                    UIImage.init(named: makeGifArr[6])!,
-                                    UIImage.init(named: makeGifArr[7])!,
-                                    ]
-        let a = UIImage.animatedImage(with: arrOfImg, duration: 3)
-        tesImgView.image = a
+        
+        implementImage()
         nextModule = 1
-        openPage.addTarget(self, action: #selector(openPagePressed(_: )), for: .touchUpInside)
-        openPage.isHidden = true
+        
+        
         
 //        if !isVisible(view: view1) {
 //            print("********* VIEW 3 IS VISIBLE *****")
@@ -110,18 +100,21 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
     }
     
     @objc func  prevModule(_ sender : UIButton){
-        if currModule > assetArray.startIndex {
+        if currModule > 0 {
             currModule -= 1
-            animateImage(currModule, prevSt)
+            
+            contentText.text = subModuleDatabase.content![currModule]
+            implementImage()
         } else {
             print("************ HIT THE FIRST INDEX")
         }
     }
     
     @objc func nextModule(_ sender : UIButton){
-        if currModule < assetArray.count-1 {
+        if currModule < (subModuleDatabase.content!.count - 1) {
             currModule += 1
-            animateImage(currModule, nextSt)
+            contentText.text = subModuleDatabase.content![currModule]
+            implementImage()
         } else {
             print("************ HIT THE LAST INDEX")
         }
@@ -133,7 +126,7 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
                               duration: 0.8,
                               options: .transitionFlipFromRight,
                               animations: {
-                self.tesImgView.image = UIImage.init(named: self.assetArray[currModule])
+                self.tesImgView.image = UIImage.init(named: self.makeGifArr[currModule])
             }, completion: nil)
         } else {
             UIView.transition(with: self.tesImgView,
@@ -144,6 +137,8 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
             }, completion: nil)
         }
     }
+    
+    
     
     @objc func tryTapped(gesture: UIGestureRecognizer) {
         cameraGrid = UIView()
@@ -244,5 +239,24 @@ class WatchVisualViewController : UIViewController, UINavigationControllerDelega
         }
         destination.modalPresentationStyle = .fullScreen
         destination.image2 = imageData!
+    }
+    
+    
+    func replaceUIImage()-> [UIImage]{
+        var arrUIImage : [UIImage] = []
+        
+        for i in 0...(subModuleDatabase.imageContent!.count-1){
+            
+            arrUIImage.append(UIImage(named: subModuleDatabase.imageContent![currModule][i])!)
+        
+        }
+        return arrUIImage
+    }
+    
+    func implementImage(){
+        let arrOfImg : [UIImage] = replaceUIImage()
+        let a = UIImage.animatedImage(with: arrOfImg, duration: 3)
+        
+        tesImgView.image = a
     }
 }
