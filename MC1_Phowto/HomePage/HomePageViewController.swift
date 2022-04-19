@@ -19,6 +19,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
                 SubModule: [
             SubModuleContent(subModuleName :"What is Composition?",
                              imageContent: [
+                                ["Page Title_SM1"],
                                 ["Slide 10", "Slide 11", "Slide 12", "Slide 13", "Slide 14", "Slide 15", "Slide 16", "Slide 17"],
                                 ["slide 20", "slide 21", "slide 22", "slide 23", "slide 24", "slide 25", "slide 26", "slide 27"],
                                 ["Slide30", "Slide31", "Slide32", "Slide33", "Slide34", "Slide35", "Slide36"],
@@ -28,6 +29,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
                                 
                              ],
                              content: [
+                                "",
                 "When you take photos, do you ever feel bored with the photos? Now you can get creative with composition techniques!",
                 """
                 Just like cooking, you need the right ingredients and spices along with the right cooking method to make delicious food. Photography also has elements that can be combined so that it becomes an interesting photo, this method is called "Composition".
@@ -38,6 +40,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             ]),
             SubModuleContent(subModuleName :"Rule Of Third",
                              imageContent: [
+                                ["Page Title_SM2"],
                                 ["2_1", "2_1-1", "2_1-2", "2_1-3", "2_1-4", "2_1-5"],
                                 ["2_11", "2_2", "2_3", "2_4", "2_5", "2_6"],
                                 ["2_6"],
@@ -45,6 +48,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
                              ],
                              
                              content: [
+                                "",
                 "Let's start learning composition with the rule of thirds theory! This theory is commonly used as a guide on smartphone cameras and pro cameras such as DSLR or Mirrorless.",
                 "Rule of Thirds is a guide in the form of a grid that divides a third of the photo area with 2 vertical lines and 2 horizontal lines so that 9 segments are formed as follows.",
                 "Then, what is the function of these lines and grids? The Rule of Thirds is used by placing an object at the point where the lines intersect, the point is called the golden section. In addition to placing objects in the golden section, we can place lines on photo objects to either vertical lines or horizontal lines.",
@@ -52,6 +56,7 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
             ]),
             SubModuleContent(subModuleName :"Golden Triangle",
                              imageContent: [
+                                ["Page Title_SM3"],
                                 ["Sub3_Slide1_0", "Sub3_Slide1_1", "Sub3_Slide1_2", "Sub3_Slide1_3", "Sub3_Slide1_4", "Sub3_Slide1_5", "Sub3_Slide1_6", "Sub3_Slide1_7", "Sub3_Slide1_8", "Sub3_Slide1_9"],
                                 ["Sub3_Slide2_0", "Sub3_Slide2_1", "Sub3_Slide2_2", "Sub3_Slide2_3", "Sub3_Slide2_4", "Sub3_Slide2_5", "Sub3_Slide2_6", "Sub3_Slide2_7", "Sub3_Slide2_8", "Sub3_Slide2_9"],
                                 ["Sub3_Slide3_0", "Sub3_Slide3_1", "Sub3_Slide3_2", "Sub3_Slide3_3", "Sub3_Slide3_4", "Sub3_Slide3_5", "Sub3_Slide3_6", "Sub3_Slide3_7", "Sub3_Slide3_8", "Sub3_Slide3_9", "Sub3_Slide3_10"],
@@ -59,16 +64,19 @@ class HomePageViewController: UIViewController, UICollectionViewDataSource, UICo
                              ],
                                 
                              content: [
+                                "",
                 "The combination of these triangles forms a grid, the meeting between the triangles becomes a golden section. Objects can be placed in any of the golden sections and line elements can be adjusted according to the grid",
                 "Golden Triangle can be used when your photo object contains a lot of strong lines, so keep exploring and be creative to take as many photos as possible!",
                 
             ]),
             SubModuleContent(subModuleName: "Framing (Frame within the frame)", imageContent:[
+                ["Page Title_SM4"],
                                     ["1_1", "1_2", "1_3", "1_4", "1_5", "1_6"],
                                     ["f2_1", "f2_2", "f2_3", "f2_4", "f2_5", "f2_6"],
                                     ["f3_1", "f3_2", "f3_3", "f3_4"]
                                 ],
                              content: [
+                                "",
                 """
                 When you hear the word "framing" surely some of you imagine a photo with a frame on the wall of your house. But framing in photography is one of the most interesting compositional methods!
                 """,

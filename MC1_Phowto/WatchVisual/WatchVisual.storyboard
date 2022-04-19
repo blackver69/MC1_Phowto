@@ -38,14 +38,6 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Y6x-SR-fy8"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="rD1-2u-tHq"/>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTU-vs-3bl">
-                                <rect key="frame" x="343" y="44" width="51" height="494"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2R-Ct-4ot">
-                                <rect key="frame" x="0.0" y="67" width="101" height="369"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzd-LF-3wq" userLabel="Background View">
                                 <rect key="frame" x="18" y="74" width="378" height="788"/>
                                 <subviews>
@@ -103,6 +95,14 @@
                                     <constraint firstAttribute="trailing" secondItem="3nN-cV-poD" secondAttribute="trailing" constant="10" id="bas-GR-zgH"/>
                                     <constraint firstAttribute="bottom" secondItem="3nN-cV-poD" secondAttribute="bottom" constant="10" id="zaI-wz-AaI"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTU-vs-3bl">
+                                <rect key="frame" x="343" y="44" width="51" height="494"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2R-Ct-4ot">
+                                <rect key="frame" x="0.0" y="67" width="101" height="369"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
